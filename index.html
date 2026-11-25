@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#11100e" />
+  <title>PHONIX Salon Studio | Smart Queue</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="ambient ambient-one"></div><div class="ambient ambient-two"></div>
+  <header class="topbar">
+    <a class="brand" href="#" data-view="home"><span class="brand-mark">P</span><span>PHONIX <small>SALON STUDIO</small></span></a>
+    <nav class="nav-links">
+      <a href="#services" data-scroll="services">Services</a>
+      <a href="#" data-view="live">Live Queue</a>
+      <a href="#about" data-scroll="about">Our Studio</a>
+    </nav>
+    <div class="nav-actions"><button class="btn btn-ghost btn-small" data-view="customer-auth">Customer Login</button><button class="btn btn-gold btn-small" data-view="owner-auth">Owner Portal <span>↗</span></button></div>
+    <button class="mobile-menu" id="mobileMenu" aria-label="Open menu">☰</button>
+  </header>
+
+  <main>
+    <section id="home" class="view active">
+      <section class="hero">
+        <div class="hero-copy">
+          <div class="eyebrow"><span></span> THE ART OF LOOKING YOUR BEST</div>
+          <h1>Look Sharp.<br><em>Skip the Wait.</em></h1>
+          <p class="hero-lead">A better salon experience starts before you take a seat. Book your service, choose your barber and follow your place in the queue — all in one place.</p>
+          <div class="hero-actions"><button class="btn btn-gold" data-view="customer-auth">Book an Appointment <span>↗</span></button><button class="btn btn-outline" data-scroll="services">Explore Services</button></div>
+          <div class="hero-proof"><div class="proof-avatars"><span>R</span><span>A</span><span>M</span></div><div><strong>Made for a smoother visit</strong><small>Simple booking · Clear queue · Great style</small></div></div>
+        </div>
+        <div class="hero-visual">
+          <img src="https://images.unsplash.com/photo-1503951914875-452162b0f3f1?auto=format&fit=crop&w=1200&q=88" alt="Premium modern barber studio">
+          <div class="image-tag"><span class="tag-dot"></span><div><strong>YOUR TIME, RESPECTED</strong><small>Smart salon queue management</small></div></div>
+          <div class="hero-index">01 <span>/</span> 03</div>
+        </div>
+      </section>
+      <section class="access-section section-wrap">
+        <div class="section-heading"><div><div class="eyebrow">WELCOME TO PHONIX</div><h2>Your visit, <em>your way.</em></h2></div><p>Choose your portal to get started.</p></div>
+        <div class="access-grid">
+          <article class="access-card customer-access"><div class="access-icon">✦</div><div class="card-kicker">FOR YOUR NEXT LOOK</div><h3>Customer<br>Experience</h3><p>Book your favourite service, pick a barber and keep an eye on your live queue token.</p><button class="text-link" data-view="customer-auth">CUSTOMER LOGIN <span>↗</span></button><div class="access-number">01</div></article>
+          <article class="access-card owner-access"><div class="access-icon">◈</div><div class="card-kicker">RUN YOUR STUDIO</div><h3>Owner / Admin<br>Portal</h3><p>Manage appointments, staff, service pricing and the salon floor from one dashboard.</p><button class="text-link" data-view="owner-auth">OWNER LOGIN <span>↗</span></button><div class="access-number">02</div></article>
+        </div>
+      </section>
+      <section id="services" class="services-section section-wrap">
+        <div class="section-heading"><div><div class="eyebrow">THE PHONIX MENU</div><h2>Good grooming. <em>Great feeling.</em></h2></div><button class="btn btn-outline btn-small" data-view="customer-auth">Book a service ↗</button></div>
+        <div class="service-preview-grid">
+          <article class="preview-card"><img src="https://images.unsplash.com/photo-1621605815971-fbc98d665033?auto=format&fit=crop&w=700&q=80" alt="Haircut"><div><span>01 / CUT</span><h3>Precision Haircut</h3></div></article>
+          <article class="preview-card"><img src="https://images.unsplash.com/photo-1622286342621-4bd786c2447c?auto=format&fit=crop&w=700&q=80" alt="Beard grooming"><div><span>02 / DETAIL</span><h3>Beard & Detail</h3></div></article>
+          <article class="preview-card"><img src="https://images.unsplash.com/photo-1560066984-138dadb4c035?auto=format&fit=crop&w=700&q=80" alt="Salon hair spa"><div><span>03 / CARE</span><h3>Hair Rituals</h3></div></article>
+        </div>
+      </section>
+      <section id="about" class="about-strip"><div class="eyebrow">PHONIX SALON STUDIO</div><h2>Style is personal.<br><em>Waiting shouldn't be.</em></h2><p>Thoughtful grooming, skilled hands and a smarter way to manage your time.</p></section>
+    </section>
+
+    <section id="customer-auth" class="view auth-view">
+      <div class="auth-shell"><div class="auth-image"><img src="https://images.unsplash.com/photo- barber?auto=format&fit=crop&w=1000&q=80" onerror="this.src='https://images.unsplash.com/photo-1503951914875-452162b0f3f1?auto=format&fit=crop&w=1000&q=80'" alt="Salon interior"><div class="auth-image-copy"><div class="eyebrow">WELCOME TO THE STUDIO</div><h2>Your next<br><em>great look</em><br>starts here.</h2></div></div>
+        <div class="auth-panel"><button class="back-link" data-view="home">← Back to home</button><div class="eyebrow">CUSTOMER PORTAL</div><h2 id="customerAuthTitle">Welcome back.</h2><p class="muted" id="customerAuthSub">Sign in to manage your salon visit.</p>
+          <form id="customerLoginForm" class="form-stack">
+            <label>Email or mobile number<input id="customerIdentity" required placeholder="you@example.com or 9876543210"></label>
+            <label>Password<input id="customerPassword" type="password" required minlength="4" placeholder="Enter your password"></label>
+            <label id="signupNameWrap" class="hidden">Your full name<input id="signupName" placeholder="Your name"></label>
+            <button class="btn btn-gold btn-full" id="customerSubmit">Sign In <span>↗</span></button>
+          </form>
+          <p class="switch-auth" id="customerSwitch">New to PHONIX? <button id="toggleSignup">Create an account</button></p>
+          <p class="fine-print">Demo project · Your details stay in this browser's local storage.</p>
+        </div></div>
+    </section>
+
+    <section id="owner-auth" class="view auth-view">
+      <div class="owner-login-card"><button class="back-link" data-view="home">← Back to home</button><div class="owner-emblem">P</div><div class="eyebrow">STUDIO MANAGEMENT</div><h2>Owner <em>access.</em></h2><p class="muted">Sign in to manage today's salon operations.</p>
+        <form id="ownerLoginForm" class="form-stack"><label>Owner email<input id="ownerEmail" type="email" required value="owner@phonix.com"></label><label>Password<input id="ownerPassword" type="password" required value="admin123"></label><button class="btn btn-gold btn-full">Enter Dashboard ↗</button></form>
+        <div class="demo-credentials"><strong>DEMO CREDENTIALS</strong><span>owner@phonix.com</span><span>admin123</span></div>
+      </div>
+    </section>
+
+    <section id="customer-dashboard" class="view dashboard-view">
+      <div class="dashboard-header"><div><div class="eyebrow">YOUR PHONIX EXPERIENCE</div><h1>Hello, <em id="customerWelcome">there.</em></h1><p class="muted">A little time for yourself, made simple.</p></div><div class="header-actions"><button class="btn btn-outline btn-small" data-view="live">Live Queue ↗</button><button class="btn btn-ghost btn-small" id="customerLogout">Log out</button></div></div>
+      <div class="customer-layout">
+        <div class="booking-column">
+          <div class="panel"><div class="panel-title"><div><span class="step-label">01 / SELECT</span><h2>Choose your service</h2></div><span class="subtle">THE MENU</span></div><div id="serviceGrid" class="service-grid"></div></div>
+          <div class="panel"><div class="panel-title"><div><span class="step-label">02 / YOUR BARBER</span><h2>Choose your specialist</h2></div></div><div id="barberGrid" class="barber-grid"></div></div>
+          <div class="panel"><div class="panel-title"><div><span class="step-label">03 / CONFIRM</span><h2>Booking details</h2></div></div>
+            <form id="bookingForm" class="booking-form"><label>Your name<input id="bookingName" required></label><label>Mobile number<input id="bookingMobile" required inputmode="numeric" pattern="[0-9+() -]{8,16}"></label><label>Appointment date<input id="bookingDate" type="date" required></label><div class="booking-summary" id="bookingSummary">Select a service and barber to see your booking summary.</div><button class="btn btn-gold btn-full">Confirm Booking <span>↗</span></button></form>
+          </div>
+        </div>
+        <aside class="my-booking panel"><div class="panel-title"><div><span class="step-label">YOUR VISIT</span><h2>My booking</h2></div><span class="live-pulse">LIVE</span></div><div id="myBookingContent" class="empty-state"><div class="empty-icon">✦</div><h3>No booking yet</h3><p>Your confirmed appointment and queue status will appear here.</p></div></aside>
+      </div>
+    </section>
+
+    <section id="owner-dashboard" class="view dashboard-view">
+      <div class="dashboard-header"><div><div class="eyebrow">PHONIX / CONTROL ROOM</div><h1>Studio <em>overview.</em></h1><p class="muted">Keep the floor flowing. Every visit in one view.</p></div><div class="header-actions"><button class="btn btn-outline btn-small" data-view="live">Open Live Display ↗</button><button class="btn btn-ghost btn-small" id="ownerLogout">Log out</button></div></div>
+      <div class="stats-grid" id="statsGrid"></div>
+      <div class="admin-panel panel"><div class="panel-title admin-title"><div><span class="step-label">LIVE OPERATIONS</span><h2>Queue management</h2></div><div class="table-tools"><input id="bookingSearch" placeholder="Search customer or token..."><select id="statusFilter"><option value="All">All statuses</option><option>Waiting</option><option>In Service</option><option>Completed</option></select></div></div>
+        <div class="table-wrap"><table><thead><tr><th>TOKEN</th><th>CUSTOMER</th><th>SERVICE</th><th>BARBER</th><th>DATE</th><th>STATUS</th><th>ACTIONS</th></tr></thead><tbody id="queueTableBody"></tbody></table></div><div id="queueEmpty" class="empty-inline hidden">No bookings match your search.</div>
+      </div>
+      <div class="management-grid">
+        <div class="panel"><div class="panel-title"><div><span class="step-label">THE TEAM</span><h2>Barber management</h2></div><button class="btn btn-outline btn-small" id="addBarberBtn">+ Add barber</button></div><div id="adminBarberList" class="manage-list"></div></div>
+        <div class="panel"><div class="panel-title"><div><span class="step-label">THE MENU</span><h2>Service pricing</h2></div></div><div id="adminServiceList" class="manage-list"></div></div>
+      </div>
+    </section>
+
+    <section id="live" class="view live-view">
+      <div class="live-top"><button class="back-link" data-view="home">← Home</button><div class="live-brand"><span class="brand-mark">P</span> PHONIX <small>LIVE QUEUE</small></div><div class="live-clock" id="liveClock"></div></div>
+      <div class="live-heading"><div class="eyebrow">YOUR TIME MATTERS</div><h1>The queue, <em>in real time.</em></h1><p>Take a moment. We'll keep your place in line updated.</p></div>
+      <div class="now-next-grid"><article class="now-card"><span class="step-label">NOW SERVING</span><div class="token-display" id="nowServing">— — —</div><h3 id="nowService">Ready for the next guest</h3><p id="nowBarber">Your barber will be with you shortly</p><div class="now-line"></div></article><article class="next-card"><span class="step-label">UP NEXT</span><div class="next-token" id="upNext">— — —</div><h3 id="nextCustomer">No one waiting</h3><p id="nextService">The next token will appear here.</p></article></div>
+      <div class="live-list-panel panel"><div class="panel-title"><div><span class="step-label">LIVE FLOOR STATUS</span><h2>Waiting guests</h2></div><span class="live-pulse">UPDATING LIVE</span></div><div id="liveWaitingList" class="live-waiting-list"></div></div>
+      <p class="live-footnote">PHONIX SALON STUDIO · LIVE QUEUE DISPLAY · DEMO MODE</p>
+    </section>
+  </main>
+  <div id="toast" class="toast" role="status"></div>
+  <footer class="site-footer"><span>© 2026 PHONIX SALON STUDIO</span><span>CRAFTED WITH CARE · POWERED BY SMART QUEUES</span><button data-view="live">LIVE QUEUE ↗</button></footer>
+  <script src="script.js"></script>
+</body>
+</html>
